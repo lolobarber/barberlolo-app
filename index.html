@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>BarberLolo App</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ff3c00">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>BarberLolo 💈</h1>
+
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="date" id="fecha">
+    <input type="time" id="hora">
+
+    <div>
+        <button onclick="agregarTurno(6000, 'Corte clásico')">Corte clásico - $6000</button>
+        <button onclick="agregarTurno(8000, 'Corte + barba')">Corte + barba - $8000</button>
+        <button onclick="agregarTurno(10000, 'Premium')">Premium - $10000</button>
+    </div>
+
+    <h2>Total ganado hoy: $<span id="total">0</span></h2>
+    <h3>Total esta semana: $<span id="totalSemana">0</span></h3>
+    <h3>Servicio más vendido: <span id="masVendido">Ninguno</span></h3>
+
+    <div id="listaTurnos"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
